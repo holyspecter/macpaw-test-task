@@ -15,8 +15,6 @@ class AirplaneController
 
     public function listByHangar(string $hangarName)
     {
-        // return ['meh'];
-
         $hangar = $this->hangarRepository->findOneByName($hangarName);
 
         return $hangar->getAirplanes();
